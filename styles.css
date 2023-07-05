@@ -214,6 +214,7 @@ footer ul li:not(:last-child) {
   }
   .hero-heading {
     width: 100%;
+    font-size: 4rem;
   }
   .feature-container {
     flex-direction: column;
