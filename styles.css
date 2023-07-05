@@ -87,9 +87,7 @@ i {
 }
 .hero-description {
   align-items: center;
-  /* justify-content: center; */
   padding: 10rem 0;
-  /* width: 100%; */
   align-items: flex-end;
 }
 .hero-heading {
@@ -148,7 +146,7 @@ aside div {
 aside h2 {
   margin-bottom: 2rem;
 }
-aside div:not(:last-child) {
+aside div {
   margin-bottom: 2rem;
 }
 
@@ -182,11 +180,11 @@ footer ul li:not(:last-child) {
 .footer-links {
   gap: 8rem;
   justify-content: center;
-  /* align-items: center; */
 }
+
 /* making responsive */
 
-@media (width<=600px) {
+@media (max-width: 600px) {
   .nav-list {
     display: none;
     /* just because width 100% it pushes down (wrap) form parent element (nav) */
@@ -226,8 +224,6 @@ footer ul li:not(:last-child) {
   }
   .img-container {
     flex-direction: column;
-    /* justify-content: center; */
-    /* width: 100%; */
   }
   .img-description {
     width: 100%;
@@ -261,8 +257,55 @@ footer ul li:not(:last-child) {
   .mailing {
     order: -1;
     flex-grow: 1;
-    /* width: 100%; */
-    /* flex-basis: 1; */
+  }
+  .contract h2,
+  .address h2,
+  .mailing h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 999px) {
+  .hero-description {
+    gap: 2rem;
+  }
+  .hero-heading h1 {
+    font-size: 6rem;
+  }
+  .hero-text {
+    flex-grow: 1;
+  }
+  .feature-container {
+    gap: 4rem;
+  }
+  .feature-container div p {
+    text-align: justify;
+  }
+  .img-container {
+    flex-direction: column;
+  }
+  .img-description {
+    width: 90%;
+  }
+  .img-features {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+  }
+  .img-features div {
+    margin-bottom: 0;
+  }
+  .img-features div p {
+    font-size: 1.6rem;
+  }
+  .img-features div h2 {
+    font-size: 2.2rem;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+  }
+  .company {
+    width: 80%;
   }
   .contract h2,
   .address h2,
