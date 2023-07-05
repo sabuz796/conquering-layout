@@ -4,133 +4,142 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conquering layout</title>
+    <!-- icon pack  -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header-container wrapper">
-        <nav>
-          <img src="images/logo.svg" alt="" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contract</a></li>
-            <li><a href="#">Sign in</a></li>
-            <li><a href="#" class="sign-up-btn"></a>Sign up</li>
+      <div class="nav-container wrapper">
+        <nav class="nav row">
+          <img src="images/logo.svg" alt="" class="logo" />
+          <i class="ph ph-list toggle-btn"></i>
+          <ul class="nav-list row">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contract</a>
+            </li>
+            <li class="nav-item"><a href="#" class="nav-link">Sign in</a></li>
+            <li class="nav-item">
+              <a href="#" class="btn sign-up-btn nav-link">Sign up</a>
+            </li>
           </ul>
         </nav>
-        <div class="header-text">
-          <div>
-            <h1>Responsive layouts <span>don't have to be a struggle</span></h1>
-          </div>
-          <div>
+      </div>
+    </header>
+
+    <section class="hero-section">
+      <div class="hero-description wrapper row">
+        <div class="hero-heading">
+          <h1>Responsive layouts <span>don't have to be a struggle</span></h1>
+        </div>
+        <div class="hero-text">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <a href="#" class="main-btn btn">i want to learn</a>
+        </div>
+      </div>
+    </section>
+    <main class="features-section">
+      <div class="feature-container wrapper row">
+        <div class="feature-mobile">
+          <h2><span>Mobile-first</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="feature-efficient">
+          <h2><span>Efficient</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="feature-quick">
+          <h2><span>Done right</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <section class="img-section">
+      <div class="wrapper row img-container">
+        <div class="img-description">
+          <h2><span>It doesn’t have to be so hard</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.
+          </p>
+          <img src="images/the-image.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam
+          </p>
+        </div>
+        <aside class="img-features">
+          <div class="split">
+            <h2>Break it down</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <a href="#">i want to learn</a>
           </div>
-        </div>
-      </div>
-    </header>
-    <main class="main">
-      <div class="wrapper">
-        <div class="main-text">
-          <div class="">
-            <h2>Mobile-first</h2>
+          <div class="work">
+            <h2>Work your way up</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="">
-            <h2>Efficient</h2>
+          <div class="you">
+            <h2>You can !</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="">
-            <h2>Done right</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-    <section>
-      <div class="wrapper">
-        <div class="section-text">
-          <div class="">
-            <h2>It doesn’t have to be so hard</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam.
-            </p>
-            <img src="images/the-image.jpg" alt="" />
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam
-            </p>
-          </div>
-          <div>
-            <div>
-              <h2>Break it down</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div>
-              <h2>Work your way up</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-            <div>
-              <h2>You can !</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-            </div>
-          </div>
-        </div>
+        </aside>
       </div>
     </section>
+
     <footer>
       <div class="wrapper">
-        <div class="footer-links">
-          <div>
-            <h2>About our company</h2>
+        <h2 class="footer-heading">just scratching the surface</h2>
+        <div class="footer-links row">
+          <div class="company">
+            <h2><span>About our company</span></h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam.
             </p>
           </div>
-          <div>
-            <h2>Getting around</h2>
+          <div class="contract">
+            <h2><span>Getting around</span></h2>
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contract</a></li>
             </ul>
           </div>
-          <div>
-            <h2>Other things</h2>
+          <div class="address">
+            <h2><span>Other things</span></h2>
             <ul>
               <li><a href="#">Lorem ipsum</a></li>
               <li><a href="#">dolor</a></li>
@@ -138,8 +147,8 @@
               <li><a href="#">consectetur</a></li>
             </ul>
           </div>
-          <div>
-            <h2>And more</h2>
+          <div class="mailing">
+            <h2><span>And more</span></h2>
             <ul>
               <li><a href="#">Lorem ipsum</a></li>
               <li><a href="#">dolor</a></li>
@@ -150,5 +159,6 @@
         </div>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -2,9 +2,11 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Oswald:wght@400;500;600;700&display=swap");
 
+/* pre styling  */
 * {
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
 }
 html {
   scroll-behavior: smooth;
@@ -12,13 +14,259 @@ html {
   font-size: 62.5%;
 }
 body {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.4;
 }
-
+img {
+  max-width: 100%;
+  display: block;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+.wrapper {
+  width: 80%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
 /* typography  */
-
 h1,
 h2 {
   font-family: "Oswald", sans-serif;
+}
+/* button styling  */
+i {
+  display: none;
+  color: white;
+  font-size: 3.5rem;
+}
+.btn {
+  background-color: #a59678;
+  border-radius: 10rem;
+}
+.sign-up-btn {
+  padding: 1rem 2rem;
+}
+.main-btn {
+  color: white;
+  padding: 1rem 4rem;
+  display: inline-block;
+  text-transform: uppercase;
+  margin-top: 3rem;
+}
+
+/* header section  */
+.header {
+  background-color: #2e323f;
+  padding: 3rem 0;
+}
+.row {
+  display: flex;
+}
+.nav {
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.nav-list {
+  color: white;
+  gap: 2rem;
+}
+
+/* hero-section */
+.hero-section {
+  background-color: #3b4050;
+  color: white;
+}
+.hero-description {
+  align-items: center;
+  /* justify-content: center; */
+  padding: 10rem 0;
+  /* width: 100%; */
+  align-items: flex-end;
+}
+.hero-heading {
+  font-size: 6rem;
+  font-weight: 900;
+  line-height: 0.9;
+  width: 50%;
+}
+.hero-text {
+  width: 40%;
+}
+span {
+  color: #a59678;
+}
+
+/* feature section  */
+
+.features-section {
+  padding: 10rem 0;
+  background-color: #e2e2e3;
+}
+.feature-container {
+  text-align: center;
+  gap: 6rem;
+}
+.feature-container h2 {
+  margin-bottom: 2rem;
+}
+
+/* img section  */
+.img-section {
+  padding: 10rem 0;
+}
+.img-description h2 {
+  margin-bottom: 2rem;
+}
+.img-description {
+  width: 60%;
+}
+.img-features {
+  width: 30%;
+}
+.img-container {
+  justify-content: center;
+  gap: 8rem;
+}
+.img-description img {
+  margin: 4rem 0;
+}
+aside div {
+  background-color: #2e323f;
+  text-align: center;
+  padding: 2rem 2rem;
+  color: white;
+}
+aside h2 {
+  margin-bottom: 2rem;
+}
+aside div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+/* footer section  */
+footer {
+  padding: 10rem 0;
+  background-color: #3b4050;
+  color: white;
+}
+footer h2 {
+  margin-bottom: 2rem;
+}
+footer ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.footer-heading {
+  text-align: center;
+  font-weight: 900;
+  font-size: 4.8rem;
+  margin-bottom: 4rem;
+}
+.company {
+  width: 45%;
+  text-align: justify;
+}
+.contract,
+.address,
+.mailing {
+  width: 20%;
+}
+.footer-links {
+  gap: 8rem;
+  justify-content: center;
+  /* align-items: center; */
+}
+/* making responsive */
+
+@media (width<=600px) {
+  .nav-list {
+    display: none;
+    /* just because width 100% it pushes down (wrap) form parent element (nav) */
+    width: 100%;
+    flex-direction: column;
+    gap: 0.4rem;
+    align-items: flex-end;
+    margin-top: 2rem;
+  }
+  .sign-up-btn {
+    display: inline-block;
+  }
+  /* can also select like this .nav-list.menu-show  */
+  .menu-show {
+    display: flex;
+  }
+  i {
+    display: block;
+  }
+
+  .hero-description {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .hero-text {
+    width: 100%;
+  }
+  .hero-heading {
+    width: 100%;
+  }
+  .feature-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .feature-container div {
+    width: 80%;
+  }
+  .img-container {
+    flex-direction: column;
+    /* justify-content: center; */
+    /* width: 100%; */
+  }
+  .img-description {
+    width: 100%;
+  }
+  .img-features {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  aside div {
+    width: 80%;
+  }
+  .footer-heading {
+    font-size: 3.6rem;
+  }
+  .footer-links {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 3rem;
+  }
+  .company {
+    width: 100%;
+  }
+  .company h2 {
+    text-align: center;
+  }
+  .contract,
+  .address,
+  .mailing {
+    order: -1;
+    flex-grow: 1;
+    /* width: 100%; */
+    /* flex-basis: 1; */
+  }
+  .contract h2,
+  .address h2,
+  .mailing h2 {
+    font-size: 2rem;
+  }
 }
